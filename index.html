@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sudhir Kumar Gupta - Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Rubik', sans-serif;
+      background: #111;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1a1a1a;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #76c7ff;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      color: #bbb;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #aaa;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #76c7ff;
+      text-shadow: 0 0 5px #76c7ff;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 3rem auto;
+      background: #1c1c1c;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 16px rgba(0, 255, 255, 0.05);
+      animation: slideIn 1s ease;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #76c7ff;
+      margin-bottom: 1rem;
+      border-left: 5px solid #76c7ff;
+      padding-left: 1rem;
+    }
+
+    p, li {
+      color: #ccc;
+      margin-bottom: 0.7rem;
+    }
+
+    .projects ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .projects li {
+      background: #232323;
+      border-radius: 10px;
+      padding: 1.5rem;
+      border: 1px solid #444;
+      transition: 0.3s ease-in-out;
+    }
+
+    .projects li:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px #00ffe1;
+    }
+
+    .projects a {
+      color: #76c7ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .projects a:hover {
+      text-shadow: 0 0 8px #76c7ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1a1a1a;
+      color: #888;
+      margin-top: 4rem;
+      animation: fadeInUp 1s ease;
+    }
+
+    /* animations */
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* responsive tweaks */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>👨‍💻 Sudhir Kumar Gupta</h1>
+    <p>Web Developer | Designer | Video Editor | DSA Learner</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>👋 About Me</h2>
+    <p>I'm a passionate coder who loves solving real-world problems. I'm fluent in Python and learning DSA using C++ and Python. I create responsive websites using HTML, CSS, and JavaScript.</p>
+    <p>Along with that, I work as a designer and video editor — I know color grading, poster design, and how to make content look good. I'm actively coding and improving my skills on platforms like CodeChef and HackerRank.</p>
+  </section>
+
+  <section id="skills">
+    <h2>🛠️ Skills</h2>
+    <p><strong>Languages:</strong> Python, C++, C</p>
+    <p><strong>Tools:</strong> VS Code, Git</p>
+    <p><strong>Others:</strong> DSA & CP (CodeChef, HackerRank)</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>🚀 Projects</h2>
+    <ul>
+      <li>
+        <strong>Amazon Clone</strong><br>
+        A fully responsive landing page built using HTML, CSS, and JavaScript. Styled to look just like Amazon's homepage.
+      </li>
+      <li>
+        <strong>Snake Game</strong><br>
+        A terminal-based classic snake game created in Python during class 12. Focused on logic and basic UI.
+      </li>
+      <li>
+        <strong>Netflix Clone</strong><br>
+        Built a responsive UI that mimics the Netflix landing page using HTML and CSS. Project will be updated soon on GitHub.
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact</h2>
+    <p>📧 Email: sudhirgupta9july@gmail.com</p>
+    <p>🔗 LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com</a></p>
+    <p>💻 GitHub: <a href="https://github.com" target="_blank">github.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Sudhir Kumar Gupta • Made with ❤️
+  </footer>
+
+</body>
+</html>
